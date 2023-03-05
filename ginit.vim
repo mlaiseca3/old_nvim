@@ -4,7 +4,7 @@ set mouse=a
 " Set Editor Font
 if exists(':GuiFont')
     " Use GuiFont! to ignore font errors
-    GuiFont Cascadia Code:h16
+    GuiFont Cascadia Code:h14
 endif
 
 " Disable GUI Tabline

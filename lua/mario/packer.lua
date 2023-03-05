@@ -73,7 +73,7 @@ return require('packer').startup(function(use)
   use 'navarasu/onedark.nvim' -- Theme inspired by Atom
   -- Visualize the undo history in git
   use('mbbill/undotree')
-use {
+  use {
 	  'VonHeikemen/lsp-zero.nvim' ,
 	  branch = 'v1.x',
 	  requires = {
