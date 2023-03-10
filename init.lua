@@ -1,3 +1,3 @@
 require('mario')
-print('hello from init.lua')
+-- print('hello from init.lua')
 
