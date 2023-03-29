@@ -40,3 +40,6 @@ vim.opt.termguicolors = true
 
 -- Set colorscheme
 vim.cmd [[colorscheme onedark]]
+
+-- Disable Swapfiles
+vim.opt.swapfile = false
