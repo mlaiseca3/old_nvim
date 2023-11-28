@@ -43,3 +43,9 @@ vim.cmd [[colorscheme onedark]]
 
 -- Disable Swapfiles
 vim.opt.swapfile = false
+
+-- Set the tabs
+vim.opt.tabstop=4
+
+-- Set the indentation
+vim.opt.shiftwidth=4
