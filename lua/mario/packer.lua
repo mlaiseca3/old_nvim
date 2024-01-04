@@ -64,7 +64,7 @@ return require('packer').startup(function(use)
 	  run = function() vim.fn["mkdp#util#install"]() end,
   })
   -- Easily comment code
-  use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
+  use 'numToStr/Comment.nvim' -- "gcc" to comment line 
   -- Add indentation guides even on blank lines
   use 'lukas-reineke/indent-blankline.nvim'
   -- Fancier status l eine
@@ -94,6 +94,12 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},             -- Required
 		  {'rafamadriz/friendly-snippets'}, -- Optional
 	  }
+  }
+  use('jparise/vim-graphql')
+  use {
+	  "ThePrimeagen/harpoon",
+	  branch = "harpoon2",
+	  requires = { {"nvim-lua/plenary.nvim"} }
   }
 
   -- End of packer startup function

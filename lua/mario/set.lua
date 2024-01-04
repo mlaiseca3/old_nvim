@@ -49,3 +49,11 @@ vim.opt.tabstop=4
 
 -- Set the indentation
 vim.opt.shiftwidth=4
+
+-- Set tab width to 2 spaces for JavaScript and TypeScript files
+vim.api.nvim_exec([[
+  augroup FileSettings
+    autocmd!
+    autocmd BufRead,BufNewFile *.js,*.ts,*.html,*.tsx,*.jsx set tabstop=2 shiftwidth=2
+  augroup END
+]], false)
