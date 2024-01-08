@@ -5,8 +5,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.keymap.set('n', '<leader>e', vim.cmd.Ex)
-vim.keymap.set('n', '<S-h>', vim.cmd.bprevious)
-vim.keymap.set('n', '<S-l>', vim.cmd.bnext)
+-- vim.keymap.set('n', '<S-h>', vim.cmd.bprevious)
+-- vim.keymap.set('n', '<S-l>', vim.cmd.bnext)
 vim.keymap.set('n', '<C-t>', vim.cmd.tabnew)
 vim.keymap.set('n', 'gx', [[<CMD>execute '!xdg-open ' .. shellescape(expand('<cfile>'), v:true)<CR>]])
 

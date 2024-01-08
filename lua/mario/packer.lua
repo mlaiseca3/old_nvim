@@ -71,6 +71,8 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   -- Theme inspired by Atom text editor
   use 'navarasu/onedark.nvim' -- Theme inspired by Atom
+  -- Neovim monokai
+  use 'tanvirtin/monokai.nvim'
   -- Visualize the undo history in git
   use('mbbill/undotree')
   use {

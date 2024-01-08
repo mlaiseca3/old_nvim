@@ -39,7 +39,7 @@ vim.opt.showtabline = 2
 vim.opt.termguicolors = true
 
 -- Set colorscheme
-vim.cmd [[colorscheme onedark]]
+vim.cmd [[colorscheme monokai]]
 
 -- Disable Swapfiles
 vim.opt.swapfile = false
@@ -57,3 +57,6 @@ vim.api.nvim_exec([[
     autocmd BufRead,BufNewFile *.js,*.ts,*.html,*.tsx,*.jsx set tabstop=2 shiftwidth=2
   augroup END
 ]], false)
+
+-- Show full path in Netrw banner
+vim.g.netrw_banner = 3
