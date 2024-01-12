@@ -111,5 +111,7 @@ return require('packer').startup(function(use)
     }
   }
 
+  use('camgraff/telescope-tmux.nvim')
+
   -- End of packer startup function
 end)
