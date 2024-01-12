@@ -1,5 +1,9 @@
 return {
 	{
+		"hrsh7th/cmp-nvim-lsp",
+
+	},
+	{
 		"L3MON4D3/LuaSnip",
 		dependencies = {
 			"saadparwaiz1/cmp_luasnip",
@@ -12,7 +16,7 @@ return {
 		config = function()
 
 			-- Set up nvim-cmp.
-			local cmp = require'cmp'
+			local cmp = require('cmp')
 			require("luasnip.loaders.from_vscode").lazy_load()
 
 			cmp.setup({
@@ -40,14 +44,8 @@ return {
 					{ name = 'buffer' },
 				})
 			})
+		end
 
 
-			-- Set up lspconfig.
-			local capabilities = require('cmp_nvim_lsp').default_capabilities()
-			-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-			require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
-				capabilities = capabilities
-			}
-		end,
 	}
 }
