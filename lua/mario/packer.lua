@@ -104,5 +104,12 @@ return require('packer').startup(function(use)
 	  requires = { {"nvim-lua/plenary.nvim"} }
   }
 
+  use {
+    'AntonVanAssche/md-headers.nvim',
+    requires = {
+        'nvim-lua/plenary.nvim'
+    }
+  }
+
   -- End of packer startup function
 end)
